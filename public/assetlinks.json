@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.appmaker.byreep",
+      "sha256_cert_fingerprints": ["3E:81:22:6E:F5:B5:5A:07:9F:A7:FA:A6:E0:F5:86:70:D6:24:3C:2A:F5:0B:11:9B:74:EC:1D:A0:8B:6C:71:FF"]
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "tourism-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.2",
+    "@nextui-org/react": "^2.2.9",
+    "jsx": "^0.9.89",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.21.3",
+    "zustand": "^4.4.7"
+  }
+}

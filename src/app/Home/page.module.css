@@ -1,0 +1,32 @@
+ .home {
+   background-color: white;
+  }
+  .content{
+
+    padding: 5% 2% 10% 1%;
+  }
+  .section {
+    margin-top: 30px;
+  }
+  
+  .Cards::-webkit-scrollbar{display: none;}
+  .Cards {
+    display: flex;
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+   gap: 15px;
+   overflow: auto;
+   scroll-snap-type: x mandatory;
+   direction: rtl;
+   position: relative;
+ }
+
+ .section p {
+ 
+   font-weight: bold;
+   color:  #003F7D;
+   font-size: larger;
+   margin-bottom: -12px;
+ }
+ .home a{text-decoration: none;}
