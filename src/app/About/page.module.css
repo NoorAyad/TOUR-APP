@@ -98,3 +98,63 @@ direction: rtl;
 .Cards::-webkit-scrollbar {
     display: none;
   }
+
+  
+ 
+
+
+   .button3 button {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: lightcoral;
+    -webkit-box-shadow: 0 0.4rem #dfd9d9;
+            box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   .button3 button:active {
+    color: white;
+    -webkit-box-shadow: 0 0.2rem #dfd9d9;
+            box-shadow: 0 0.2rem #dfd9d9;
+    -webkit-transform: translateY(0.2rem);
+        -ms-transform: translateY(0.2rem);
+            transform: translateY(0.2rem);
+   }
+   
+   .button3 button:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+    
+   
+
+   
+   .button3 button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+  
+   @media(hover: hover) and (pointer: fine) {
+    .button3 button:hover {
+        background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+    }
+}
+  
+   @media(hover: hover) and (pointer: fine) {
+    .button3 button:active {
+        color: white;
+        -webkit-box-shadow: 0 0.2rem #dfd9d9;
+                box-shadow: 0 0.2rem #dfd9d9;
+        -webkit-transform: translateY(0.2rem);
+            -ms-transform: translateY(0.2rem);
+                transform: translateY(0.2rem);
+    }
+}

@@ -18,7 +18,7 @@ function page() {
           <p>رحلة سياحية</p>
 
           <div className={styles.Cards}>
-          <Link href={"/About"}><Card Pic={pic3}/></Link>
+          <Link href={"/About"}><Card Pic={pic3} /></Link>
              <Link href={"/About"}><Card Pic={pic2}/></Link>
              <Link href={"/About"}><Card Pic={pic1}/></Link>
           <Link href={"/About"}><Card Pic={pic3}/></Link>

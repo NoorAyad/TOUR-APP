@@ -5,7 +5,8 @@
     z-index: 2;
     background-color: white;
     width: 100%;
-    color: #003F7D;
+    color: #00a0b1;
+  
 }
 
 .content {
@@ -46,7 +47,7 @@
 
 .bell {
     font-size: larger;
-    color:  #003F7D;
+ 
      font: weight bolder;;
 }
 
@@ -54,6 +55,6 @@
 
 
 .content a {
-    color: #003F7D;
+    color: #00a0b1;
       font-size: 25px;
   }

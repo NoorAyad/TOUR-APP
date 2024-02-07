@@ -1,44 +1,120 @@
 .profile{ 
-width: 100%;}
+width: 100%;
+height: 100%;}
 .header {
     align-items: center;
 display: flex;
  justify-content: space-around;
 }
  
-.img{  vertical-align: middle;
+.img{  
     width: 170px;
     height:170px;
-    border:2px solid  #003F7D;
+    border:2px solid#00a0b1;
     border-radius: 50%;
-  
+
+    align-self: center;
 }
 .pinfo{background-color: rgb(255, 255, 255);
    display: flex;  
    flex-direction: column;
 gap: 7px;
  }
- .pinfo h3{color: #d2691e;}
- .pinfo h4{color: rgb(223, 100, 12);}
- .pinfo h6{color: rgb(236, 203, 180);}
+ .pinfo h3{   color: #00a0b1;
+text-align: center;}
+ .pinfo h4{color: rgb(223, 100, 12);
+}
+ .pinfo h6{color: rgb(195, 195, 195);
+text-align: center;}
  /* .pinfo h3{} */
 /* .avatar h1{ }
 .avatar h6{display: inline;}
 .avatar p{display: inline-block;} */
 .content{background-color: #ffffff;
-margin:  3% 7%;}
-.content p{font-size: larger;
-color:#003F7D;
+margin: auto;
+padding:10px 15px;
+ }
+.content p{font-size: medium;
+    color: #000000;
 padding-top: 10px;}
-.icon{color:chocolate;
+.icon{   color: #00a0b1;
     margin-bottom: -4px;
 padding-left: 10px;}
 .flex{flex-direction: column;
     gap: 10px;
     display: flex;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .calender{width: 20px;
 height: 20px;
 margin-bottom: -6px;
 margin-left: 10px;}
+.back{   color: #00a0b1;
+font-size: xx-large;
+margin-right: 95%;}
+.content button{border-style: none;
+outline-color: none;
+background-color: white;}
+.pinfo {
+
+    width: 200px;
+    
+    height: 200px;
+    
+    position: relative;
+    
+    border-radius: 50%;
+    
+    overflow: hidden;
+    
+    }
+    
+    .pinfo h3 {
+    
+    position: absolute;
+    
+    top: 50%;
+    
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    
+    width: 100%;
+    
+    height: 100%;
+    
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    white-space: nowrap;
+    
+    }
+    
+    .pinfo h3::after {
+    
+    content: '';
+    
+    display: block;
+    
+    width: 100%;
+    
+    height: 100%;
+    
+    border-radius: 50%;
+    
+    background: inherit;
+    
+    position: absolute;
+    
+    top: 0;
+    
+    left: 0;
+    
+    z-index: -1;
+    
+    }

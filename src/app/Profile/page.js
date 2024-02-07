@@ -1,41 +1,53 @@
 "use client";
-import { BiSolidMessageAltError } from "react-icons/bi";
-import Link from "next/link";
-import { MdMarkEmailUnread } from "react-icons/md";
-import { RiSecurePaymentLine } from "react-icons/ri";
+import { IoArrowBackCircle } from "react-icons/io5";
 import { PiPhoneCallFill } from "react-icons/pi";
-import styles from "./page.module.css";
-import Header from "@/Components/Header/header";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { BiSolidMessageAltError } from "react-icons/bi";
+import { MdMarkEmailUnread } from "react-icons/md";
 import { BsFillSendFill } from "react-icons/bs";
+import { LuCalendarClock } from "react-icons/lu";
 import { IoSettings } from "react-icons/io5";
-import Image from "next/image";
 import { IoMdLogOut } from "react-icons/io";
-
-import Footer from "@/Components/Footer/footer";
 import Container from "@/Components/Container/Container";
-import img from "../../../public/pic3.jpg"
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./page.module.css";
+import img from "../../../public/pic3.jpg";
 import React, { useState } from "react";
 import Editable from "@/Components/Editor/editable";
-import calender from "../../../public/calendar (1).png"
-import settings from "../../../public/machine.png"
- function Profile () {
-  const [task, setTask] = useState("");
-    return (
-<div className={styles.profile}>
-    
-    <Container>
-        <div className={styles.content} >
-<div className={styles.header}>
-      <div className={styles.pinfo}><h3>لانا اسامة</h3>
-      
-      <h6>منذ 2024 </h6></div>
-      
-      <Image src={img} className={styles.img}/>
-      </div>
-        
-        <div className={styles.flex}>
+ 
+import { useRouter } from 'next/navigation'
+function Profile() {   const router = useRouter()
+  return (
+    <div className={styles.profile}>
+      <Container>
+        <div className={styles.content}>
+
+
      
-      <p>   <Editable
+ 
+
+  
+ 
+          <button
+            type="button"
+            className={styles.back}
+            onClick={() => router.back()}
+          >
+            <IoArrowBackCircle />
+          </button>
+          <div className={styles.header}>
+            <div className={styles.pinfo}>
+            <Image src={img} className={styles.img} />
+              <h3>لانا اسامة</h3>
+
+              <h6>منذ 2024 </h6>
+            </div>
+
+          </div>
+
+          <div className={styles.flex}>
+            {/* <p>   <Editable
       text={task}
       placeholder="Mobile Number ✏️"
       type="text"
@@ -47,19 +59,42 @@ import settings from "../../../public/machine.png"
         value={task}
         onChange={e => setTask(e.target.value)}
       />
-    </Editable> <PiPhoneCallFill className={styles.icon}/> </p>
-      <p>example@gmail.com<MdMarkEmailUnread className={styles.icon}/></p>
-       <p>قسيمة الدفع <RiSecurePaymentLine className={styles.icon}/></p>
-        <p>شارك اصدقائك التطبيق<BsFillSendFill className={styles.icon}/></p>
-         <p>من نحن<BiSolidMessageAltError className={styles.icon}/></p>
-        <p>الاعدادات<Image src={settings} className={styles.calender}/></p>
-        <p>رحلاتك السابقة< Image src={calender} className={styles.calender}/></p>
-        <p>تسجيل الخروج<IoMdLogOut className={styles.icon}/></p>
-</div>
+    </Editable> <PiPhoneCallFill className={styles.icon}/> </p> */}
+            <p>
+            
+              <PiPhoneCallFill className={styles.icon} />  07715291073
+            </p>
+            <p>  <MdMarkEmailUnread className={styles.icon} />
+              example@gmail.com
+            
+            </p>
+            <p>
+          <RiSecurePaymentLine className={styles.icon} />    قسيمة الدفع 
+            </p>
+            <p>     <BsFillSendFill className={styles.icon} />
+              شارك اصدقائك التطبيق
+         
+            </p>
+            <p>  <BiSolidMessageAltError className={styles.icon} />
+              من نحن
+            
+            </p>
+            <p><LuCalendarClock className={styles.icon} />
+              رحلاتك السابقة
+              
+            </p>
+            <p>    <IoSettings className={styles.icon} />
+              الاعدادات
+          
+            </p>
+            <p>  <IoMdLogOut className={styles.icon} />
+              تسجيل الخروج
+            
+            </p>
+          </div>
         </div>
-    </Container>
-    <Header/>
-</div>
-    );
-};
+      </Container>
+    </div>
+  );
+}
 export default Profile;

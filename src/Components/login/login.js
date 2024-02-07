@@ -32,6 +32,7 @@ const login = () => {
       width: "100%",
       borderTopRightRadius: "150px 250px",
       borderTopLeftRadius: "150px 250px",
+      
     },
   };
   return (
@@ -53,7 +54,7 @@ const login = () => {
       <Modal
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
-        style={customStyles}
+         
       >
         <div className={styles.header}>
           {/* <button onClick={() => setIsOpen(false)}>X</button> */}

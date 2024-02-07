@@ -20,13 +20,18 @@
    scroll-snap-type: x mandatory;
    direction: rtl;
    position: relative;
+  
  }
+  
 
  .section p {
  
    font-weight: bold;
-   color:  #003F7D;
+   color: #00a0b1;
    font-size: larger;
    margin-bottom: -12px;
  }
- .home a{text-decoration: none;}
+ .home a{text-decoration: none;
+ 
+}
+ 

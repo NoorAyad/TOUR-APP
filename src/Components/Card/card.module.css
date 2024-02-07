@@ -14,11 +14,11 @@
      color: #ffffff;
      padding: 4px;
      border-radius: 6px;
-     background-color: #003F7D;
+     background-color:#00a0b1;
     }   
  .header a {
      margin-left: 6px;
-     color:#003F7D; 
+     color: #00a0b1;
      padding: 4px 5px;
      border-radius: 6px;
      background-color: #ffffff;
@@ -70,14 +70,16 @@ padding: 2px 5px;}
      border-top-left-radius: 0px;
      border-top: unset;
 
-background-color: white;
+background-color: #00a0b10f;
 
  }
-  .tid1 h4{color: #003F7D;}
-  .country{color: #003F7D;
+  .tid1 h4{   color: #00a0b1;}
+  .country{   color: #00a0b1;
+    text-shadow:  0 0 black;
 opacity: 0.6;}
 .loc{color:#fe5101f7;
    margin-bottom: -1.5px;
 }
 
-.Card:hover{opacity: 0.6;}
+.Card:hover{opacity: 0.6;
+    }

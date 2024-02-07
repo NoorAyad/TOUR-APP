@@ -27,7 +27,7 @@ const SetAvatar = () => {
             <LuUpload className={styles.image2} />
           </div>
           <span className={styles.text}>
-            الصورة شخصية
+            الصورة الشخصية
           </span>
         </div>
       )}
