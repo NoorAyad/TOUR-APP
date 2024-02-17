@@ -16,20 +16,20 @@
      border-radius: 6px;
      background-color:#00a0b1;
     }   
- .header a {
+  .share {
      margin-left: 6px;
      color: #00a0b1;
-     padding: 4px 5px;
-     border-radius: 6px;
+     padding: 4px 4px;
+     border-radius: 7px;
      background-color: #ffffff;
      text-decoration: none;
-     font-size: smaller;
+ 
  }
 
  .img img {
    min-width: 200px;
    width: 100%;
-     height: 200px;
+     height: 180px;
      position: relative;
      border-radius: 10px;
      border-bottom-left-radius: 0;

@@ -151,7 +151,7 @@ function page() {
                       className={styles.check2}
                       name="img"
                       id="img"
-                    />
+                      alt={'image'} />
                   </div>
                   <span className={styles.span}>ادخل رمز التأكيـــد </span>
                   <OtpInput

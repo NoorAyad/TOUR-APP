@@ -8,17 +8,19 @@ import Button from "@/Components/Button/Button";
 import Footer from "@/Components/Footer/footer";
 import Container from "@/Components/Container/Container";
 import Card from "@/Components/Card/card";
+import { useRouter } from 'next/navigation'
 function About() {
+  const router = useRouter();
   return (
     <div className={styles.about}>
       <Header />
       <Container>
         <div className={styles.content}>
           <div className={styles.Cards}>
-            <Image src={Pic} className={styles.img} />
+            <Image src={Pic} className={styles.img} alt={'image'}/>
 
-            <Image src={Pic} className={styles.img} />
-            <Image src={Pic} className={styles.img} />
+            <Image src={Pic} className={styles.img} alt={'image'} />
+            <Image src={Pic} className={styles.img}  alt={'image'}/>
           </div>
           <p>
             {" "}

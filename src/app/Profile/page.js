@@ -15,9 +15,11 @@ import styles from "./page.module.css";
 import img from "../../../public/pic3.jpg";
 import React, { useState } from "react";
 import Editable from "@/Components/Editor/editable";
- 
+import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
-function Profile() {   const router = useRouter()
+import Footer from "@/Components/Footer/footer";
+function Profile() {   const router = useRouter();
+  const pathname = usePathname();
   return (
     <div className={styles.profile}>
       <Container>
@@ -38,7 +40,7 @@ function Profile() {   const router = useRouter()
           </button>
           <div className={styles.header}>
             <div className={styles.pinfo}>
-            <Image src={img} className={styles.img} />
+            <Image src={img} className={styles.img} alt={'image'} />
               <h3>لانا اسامة</h3>
 
               <h6>منذ 2024 </h6>
@@ -94,6 +96,7 @@ function Profile() {   const router = useRouter()
           </div>
         </div>
       </Container>
+      <Footer currentPath=  {pathname} />
     </div>
   );
 }
