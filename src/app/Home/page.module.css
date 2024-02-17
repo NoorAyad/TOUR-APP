@@ -118,6 +118,7 @@ background-color: white;
    margin-top: 30px;
    text-align: center;
    gap: 6px;
+   margin-bottom: 70px;
  }
 
  .Cardss img {
@@ -168,7 +169,7 @@ background-color: white;
  .section p {
 
    font-weight: bold;
-   color: #003F7D;
+   color: #00A0B1;
    font-size: larger;
    margin-bottom: -12px;
  }
