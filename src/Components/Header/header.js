@@ -1,10 +1,10 @@
 import styles from "./header.module.css";
 import Container from "../Container/Container";
-
+import Image from "next/image";
 import { HiHome } from "react-icons/hi2";
 import { IoArrowBackCircle } from "react-icons/io5";
 import Link from "next/link";
-
+import logo from "/public/logo2.svg";
 import { RiHeartsFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
 import { GoBellFill } from "react-icons/go";
@@ -44,7 +44,7 @@ const Header = ({ currentPath }) => {
               style={{ color: currentPath === "/Home" ? "#00A0B1" : "#aaa" }}
             />
           </Link>
-     
+     <Image src={logo} height={30}  width={40} alt={"img"} />
         </div>
       </Container>
     </div>

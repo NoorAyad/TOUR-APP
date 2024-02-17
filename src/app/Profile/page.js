@@ -17,9 +17,9 @@ import React, { useState } from "react";
 import Editable from "@/Components/Editor/editable";
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
-import Footer from "@/Components/Footer/footer";
+ 
 function Profile() {   const router = useRouter();
-  const pathname = usePathname();
+ 
   return (
     <div className={styles.profile}>
       <Container>
@@ -96,7 +96,7 @@ function Profile() {   const router = useRouter();
           </div>
         </div>
       </Container>
-      <Footer currentPath=  {pathname} />
+ 
     </div>
   );
 }
