@@ -2,7 +2,6 @@
 import Container from "@/Components/Container/Container";
 import styles from "./page.module.css";
 import Form1 from "@/Components/Form/Form1";
-import Button from "@/Components/Button/Button";
 import pic3 from "../../../public/authentication.svg";
 import Image from "next/image";
 import { useState } from "react";
@@ -72,7 +71,6 @@ function page() {
                 placeholder="رقم الهاتف"
               />
               <input
-            
                 required=""
                 onChange={(e) => setMatch(e.target.value)}
                 className={styles.input}
@@ -82,7 +80,6 @@ function page() {
                 placeholder="كلمـة الســر "
               />
               <input
-           
                 required=""
                 onChange={(e) => {
                   if (e.target.value === match) {
@@ -108,7 +105,7 @@ function page() {
                 onClick={() => {
                   if (number !== "" && email !== "" && Password !== "") {
                     setSteps(steps + 1);
-                    const info = { number, email,Password};
+                    const info = { number, email, Password };
                   } else {
                     alert(
                       `user with this information: no match
@@ -120,10 +117,7 @@ function page() {
                 className={styles.login_button}
                 style={{
                   backgroundColor:
-                    number !== "" &&
-                    email !== "" &&
-                    Password !== "" 
-                    
+                    number !== "" && email !== "" && Password !== ""
                       ? "#00a0b1"
                       : "#009fb18f",
                   borderColor:
@@ -151,7 +145,8 @@ function page() {
                       className={styles.check2}
                       name="img"
                       id="img"
-                      alt={'image'} />
+                      alt={"image"}
+                    />
                   </div>
                   <span className={styles.span}>ادخل رمز التأكيـــد </span>
                   <OtpInput

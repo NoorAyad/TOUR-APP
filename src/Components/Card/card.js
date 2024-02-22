@@ -1,8 +1,5 @@
 import styles from "./card.module.css";
-import Link from "next/link";
 import Image from "next/image";
-import Pic from "/public/pic1.jpg";
-// import { BsBookmarkHeartFill } from "react-icons/bs";
 import { IoHeartOutline } from "react-icons/io5";
 import { IoArrowUndoOutline } from "react-icons/io5";
 import { MdLocationOn } from "react-icons/md";

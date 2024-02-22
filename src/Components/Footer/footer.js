@@ -6,7 +6,6 @@ import { RiHeartsFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
 import { GoBellFill } from "react-icons/go";
 import React, { useState } from "react";
-import Profile from "@/app/Profile/page";
 const Footer = ({ currentPath }) => {
   const [isClicked, setIsClicked] = useState(false);
   const handleClick = () => {

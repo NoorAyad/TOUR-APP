@@ -6,7 +6,7 @@ import { LuUpload } from "react-icons/lu";
 import { useInfo } from "@/globalVars";
 
 const SetAvatar = () => {
-  const{image,setImage}=useInfo();
+  const { image, setImage } = useInfo();
   const inputRef = useRef(null);
   const handleImageClick = () => {
     inputRef.current.click();
@@ -26,9 +26,7 @@ const SetAvatar = () => {
           <div className={styles.box}>
             <LuUpload className={styles.image2} />
           </div>
-          <span className={styles.text}>
-            الصورة الشخصية
-          </span>
+          <span className={styles.text}>الصورة الشخصية</span>
         </div>
       )}
       <input

@@ -6,8 +6,9 @@
 .image1 {
   font-size: 200px;
   color: #00a0b1;
-margin: auto;
+  margin: auto;
 }
+
 .box {
   height: 50px;
   width: 50px;
@@ -15,31 +16,35 @@ margin: auto;
   display: grid;
   place-items: center;
   border-radius: 50px;
- margin: auto;
+  margin: auto;
   margin-top: -50px;
-align-self: center;
+  align-self: center;
 }
+
 .image2 {
   font-size: 25px;
   color: #fff;
 }
+
 .parent {
   display: flex;
   align-items: center;
   justify-content: center;
- 
+
   margin-top: 30px;
   margin-bottom: 15px;
 }
+
 .parent img {
   object-fit: cover;
   width: 220px;
   height: 220px;
   border-radius: 100%;
 }
+
 .text {
   position: relative;
- 
- 
-  color:#aaaaaa;
+
+
+  color: #aaaaaa;
 }

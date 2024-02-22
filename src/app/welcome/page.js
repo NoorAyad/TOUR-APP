@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import Image from "next/image";
-import img from "../../../public/undraw_stranded_traveler_pdbw.svg";
+import img from "../../../public/welcomepic.svg";
 import Link from "next/link";
 const page = () => {
   return (

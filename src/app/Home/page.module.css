@@ -10,24 +10,25 @@
  .navbar {
    list-style-type: none;
    margin: auto;
- display: flex;
+   display: flex;
 
- padding: 10px 0 10px 0;
+   padding: 10px 0 10px 0;
    position: -webkit-sticky;
    /* Safari */
    position: sticky;
-z-index: 2;
-top:58px;
-background-color: white;
+   z-index: 2;
+   top: 58px;
+   background-color: white;
  }
 
  .navbar li {
-  width: 100%;
+   width: 100%;
  }
 
  .navbar li a {
- background-color: #00a0b121;
-   color: #00A0B1;;
+   background-color: #00a0b121;
+   color: #00A0B1;
+   ;
    text-decoration: none;
    border-radius: 8px;
    padding: 5px;
@@ -78,18 +79,18 @@ background-color: white;
 
  }
 
- 
+
 
  .home a {
    text-decoration: none;
 
  }
 
- 
- 
- 
- 
- 
+
+
+
+
+
  .section p {
 
    font-weight: bold;
@@ -97,4 +98,3 @@ background-color: white;
    font-size: larger;
    margin-bottom: -14px;
  }
- 

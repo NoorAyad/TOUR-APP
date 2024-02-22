@@ -1,16 +1,17 @@
 .main {
   background-color: white;
-  
+
 }
+
 .content {
-width: fit-content;
- margin: auto;
- 
-  
-} 
+  width: fit-content;
+  margin: auto;
+
+
+}
 
 .content h3 {
- margin-top: 14px;
+  margin-top: 14px;
   color: #00a0b1;
   position: relative;
   font-size: xx-large;
@@ -18,7 +19,7 @@ width: fit-content;
 }
 
 .main p {
- margin-top: 15px;
+  margin-top: 15px;
   color: black;
   font-size: x-large;
   font-weight: 400;
@@ -29,13 +30,14 @@ width: fit-content;
   width: 450px;
   margin: auto;
   margin-top: 20px;
-align-content: center;
+  align-content: center;
 }
+
 .input {
   display: block;
   margin: auto;
   width: 80%;
-  background:white;
+  background: white;
   border: none;
   padding-block: 15px;
   border-radius: 20px;
@@ -46,22 +48,23 @@ align-content: center;
   position: relative;
   align-content: center;
   caret-color: #00a0b1;
-  padding-inline-start: 5% ;
- 
- border: 2px solid #00a0b1;
+  padding-inline-start: 5%;
 
- 
-  }
-  .input::-moz-placeholder {
+  border: 2px solid #00a0b1;
+
+
+}
+
+.input::-moz-placeholder {
   color: rgb(170, 170, 170);
 }
 
- .input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder {
   color: rgb(170, 170, 170);
 }
 
- 
- .input:-ms-input-placeholder {
+
+.input:-ms-input-placeholder {
   color: rgb(170, 170, 170);
 }
 
@@ -72,58 +75,68 @@ align-content: center;
 .input::placeholder {
   color: rgb(170, 170, 170);
 }
- .input:focus {
+
+.input:focus {
   outline: none;
 }
+
 .input:focus::-webkit-input-placeholder {
-	color : transparent;
-}
-.input:focus::-moz-placeholder {
-	color : transparent;
-}
-.input:-moz-placeholder {
-	color : transparent;
-}
-.input:focus::-webkit-input-placeholder {
-	opacity : 0;
-}
-.input:focus::-moz-placeholder {
-	opacity : 0;
-}
-.input:-moz-placeholder {
-	opacity : 0;
+  color: transparent;
 }
 
- .SetAvatar{margin: auto;
-text-align: center;}
- 
- 
-  @media only screen and (max-width: 600px) {
-  
- 
-   
-    .SetAvatar{margin: auto;
-      width: 100%;
-      text-align: center;}
-    .content h3 {
-      margin: 20px 8px 0px 0px;
-      color: #00a0b1;
-      font-size: larger;
-      font-weight: bold;
-    }
- 
-    .main p {
-      margin: 20px 8px 0px 0px;
-      color: black;
-      line-height: normal;
-      font-weight: 400;
-      font-size: medium;
-    }
- 
-     
- 
-   
-  
+.input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.input:-moz-placeholder {
+  color: transparent;
+}
+
+.input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.input:-moz-placeholder {
+  opacity: 0;
+}
+
+.SetAvatar {
+  margin: auto;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+  .SetAvatar {
+    margin: auto;
+    width: 100%;
+    text-align: center;
   }
-  
-   
+
+  .content h3 {
+    margin: 20px 8px 0px 0px;
+    color: #00a0b1;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .main p {
+    margin: 20px 8px 0px 0px;
+    color: black;
+    line-height: normal;
+    font-weight: 400;
+    font-size: medium;
+  }
+
+
+
+
+
+}
