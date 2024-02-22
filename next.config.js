@@ -12,6 +12,16 @@ const withPWA = require("@ducanh2912/next-pwa").default({
   },
 });
 
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ucarecdn.com",
+        port: "",
+      },
+    ],
+  },
+};
 
 module.exports = withPWA(nextConfig);

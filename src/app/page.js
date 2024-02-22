@@ -1,26 +1,57 @@
+"use client";
+import styles from "./page.module.css";
 import Image from "next/image";
-
+import img from "../../public/welcomepic.svg";
 import Link from "next/link";
+import { useEffect } from "react";
+import { redirect } from "next/navigation";
+const Home = () => {
+  useEffect(() => {
+    const visited = localStorage.getItem("visited");
+    if (visited) {
+      redirect("/Home");
+    }
+  }, []);
 
-export default function Home() {
   return (
-    <main>
-      <Link href={"/welcome"}>welcome</Link>
-      <br />
-      <Link href={"/Signup"}>Sign up </Link>
-      <br />
-      <Link href={"/Login"}>login </Link>
-      <br />
-      <Link href={"/Home"}>Home Page</Link>
-      <br />
-      <Link href={"/About"}>about</Link>
-      <br />
+    <main className={styles.main}>
+      <div className={styles.content}>
+        <h3> يــا هــــــــلا ! </h3>
+        <p>
+          {" "}
+          مرحباً بك في تطبيق رحلات <br />
+          المكان الذي يمكّنك من اكتشاف جمال العراق وما وراءه انضم إلينا لتصبح
+          جزءاً من مجتمع يربط بين المسافرين وشركات السياحة اختر رحلتك، احجز
+          بسهولة، وشارك تجاربك، لنبني سوياً رحلات تمتلك طابعًا ثقافياً
+          استثنائياً
+        </p>
+        <div>
+          <Image src={img} alt={"img"} className={styles.img} />
+        </div>
 
-      <Link href={"/Profile"}>profile </Link>
-      <br />
-      <Link href={"/pay"}>PAY </Link>
-
-      <br />
+        <div className={styles.Button}>
+          <Link href={"/Signup"}>
+            {" "}
+            <button>إنشــاء حســاب</button>
+          </Link>
+          <Link href={"/Login"}>
+            {" "}
+            <button>تسجيــل الــدخول</button>
+          </Link>
+          <Link href={"/Home"}>
+            {" "}
+            <button
+              onClick={() => {
+                localStorage.setItem("visited", true);
+              }}
+            >
+              تخــطـــي{" "}
+            </button>
+          </Link>
+        </div>
+      </div>
     </main>
   );
-}
+};
+
+export default Home;
