@@ -18,7 +18,7 @@ function page() {
       <Container>
         <div className={styles.content}>
           <div className={styles.section}>
-            <p>رحلة سياحية</p>
+            <p>رحلات سياحية</p>
 
             <div className={styles.Cards}>
               <Link href={"/About"}>
@@ -52,7 +52,7 @@ function page() {
           </div>
 
           <div className={styles.section}>
-            <p>رحلة دينية</p>
+            <p>زيارة دينية</p>
             <div className={styles.Cards}>
               <Link href={"/About"}>
                 <Card Pic={pic3} />
@@ -85,7 +85,7 @@ function page() {
           </div>
 
           <div className={styles.section}>
-            <p>احجز تذكرة </p>
+            <p>حجز تذاكر طيران </p>
             <div className={styles.Cards}>
               <Link href={"/About"}>
                 <Card Pic={pic3} />

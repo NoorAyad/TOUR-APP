@@ -46,11 +46,12 @@
  }
 
  .tid1 h5 {
-     background-color: chocolate;
-     color: white;
+     background-color: rgb(255, 255, 255);
+     color: #00a0b1;
      border-radius: 6px;
-     font-size: x-small;
-     padding: 2px 5px;
+     font-size: small;
+     margin-top: 4px;
+ 
  }
 
  .tid2 {
@@ -75,7 +76,7 @@
      border-top-left-radius: 0px;
      border-top: unset;
 
-     background-color: #00a0b10f;
+     /* background-color: #00a0b10f; */
 
  }
 
@@ -84,7 +85,7 @@
  }
 
  .country {
-     color: #00a0b1;
+     color: #aaa;
      text-shadow: 0 0 black;
      opacity: 0.6;
  }
